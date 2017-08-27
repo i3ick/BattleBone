@@ -1,0 +1,38 @@
+name: BATTLEBONE
+main: me.i3ick.BattleBone.BattleBoneMain
+version: 0.1
+description: Fight hoards of skeletons
+commands:
+  bb:
+    description: "Main BATTLEBONE command"
+
+permissions:
+  battlebone.*:
+    description: "Gain access to all BATTLEBONE commands!"
+    children:
+      battlebone.leave: true
+      battlebone.join: true
+      battlebone.list: true
+      battlebone.pn: true
+      battlebone.remove: true
+      battlebone.setspawn: true
+      battlebone.signplace: true
+      battlebone.create: true
+      battlebone.setlobby: true
+      battlebone.forcestart: true
+      battlebone.forceend: true
+      battlebone.award: true
+      battlebone.interact: true
+      battlebone.joinall: true
+      battlebone.settester: true
+      battlebone.dev: true
+      battlebone.setin: true
+      battlebone.setout: true
+  battleboneplayers.*:
+    description: "Give normal players permission to play BATTLEBONE!"
+    children:
+      battlebone.leave: true
+      battlebone.join: true
+      battlebone.list: true
+      battlebone.interact: true
+softdepend: [Vault]
