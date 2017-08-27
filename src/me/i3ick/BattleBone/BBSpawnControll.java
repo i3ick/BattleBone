@@ -167,7 +167,7 @@ public class BBSpawnControll {
                     arena.setSkeletonArray(skele.getEntityId());
                     plugin.getLogger().info("spawnentit");
                     gc.getMobID();
-                    gc.wasRecentlyHit.put(skele.getEntityId(), false);
+                    gc.wasRecentlyHit.put(skele.getEntityId(), false); // mob life still isn't working properly
 
 
                     lifeCounter(skele.getEntityId(), world, gc);
